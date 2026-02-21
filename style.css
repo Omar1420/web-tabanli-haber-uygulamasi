@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #e31e24;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #212529;
+    --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dark-theme {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #f8f9fa;
+    --shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; transition: 0.3s ease; }
+
+body { background-color: #d1d1d1; display: flex; justify-content: center; }
+
+/* Mobil Konteyner Yapısı [cite: 4] */
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+header {
+    background: var(--card-bg);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.header-top h2 { color: var(--text-color); font-size: 22px; letter-spacing: -1px; }
+.header-top h2 span { color: var(--primary-color); font-weight: 800; }
+
+#dark-mode-btn { background: #eee; border: none; width: 35px; height: 35px; border-radius: 50%; cursor: pointer; color: #333; }
+.dark-theme #dark-mode-btn { background: #333; color: #fff; }
+
+#categories { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; }
+#categories::-webkit-scrollbar { display: none; }
+
+#categories button {
+    background: #eee; border: none; padding: 8px 18px; border-radius: 20px;
+    white-space: nowrap; font-weight: 600; cursor: pointer; color: #555; font-size: 13px;
+}
+
+#categories button.active { background: var(--primary-color); color: white; }
+
+/* Haber Kartları [cite: 4] */
+.news-card {
+    background: var(--card-bg);
+    margin: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.news-card img { width: 100%; height: 210px; object-fit: cover; }
+.news-card-body { padding: 15px; color: var(--text-color); }
+.card-meta { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 11px; font-weight: bold; }
+.card-meta .cat { color: var(--primary-color); text-transform: uppercase; }
+.card-meta .time { opacity: 0.6; }
+
+.news-card h3 { font-size: 17px; margin-bottom: 8px; line-height: 1.4; }
+.news-card p { font-size: 13px; opacity: 0.7; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Detay Sayfası  */
+.detail-page {
+    position: fixed; top: 0; left: 50%; transform: translateX(-50%);
+    width: 100%; max-width: 480px; height: 100%;
+    background: var(--card-bg); z-index: 200; overflow-y: auto; padding: 20px;
+}
+
+.hidden { display: none; }
+.detail-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.back-btn, .fav-btn { background: none; border: none; font-size: 18px; color: var(--text-color); cursor: pointer; }
+.fav-btn.active { color: var(--primary-color); }
+
+#detail-content img { width: 100%; border-radius: 12px; margin-bottom: 20px; box-shadow: var(--shadow); }
+#detail-content h2 { color: var(--text-color); margin-bottom: 15px; line-height: 1.3; }
+#detail-content p { color: var(--text-color); line-height: 1.7; font-size: 15px; opacity: 0.9; }

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "kategori": "Teknoloji",
+    "baslik": "Yeni Akıllı Telefonlar Tanıtıldı",
+    "ozet": "Yapay zeka destekli yeni nesil telefonlar piyasaya sürüldü.",
+    "icerik": "Bugün yapılan lansmanla birlikte, tamamen yapay zeka ile optimize edilmiş işlemcilere sahip yeni nesil akıllı telefonlar tanıtıldı. Cihazlar 200MP kamera ve 3 gün süren batarya ömrü vaat ediyor.",
+    "resim": "https://picsum.photos/id/1/400/200"
+  },
+  {
+    "id": 2,
+    "kategori": "Spor",
+    "baslik": "Milli Takımdan Büyük Başarı",
+    "ozet": "A Milli Futbol Takımı, rakibini 3-0 mağlup ederek finale yükseldi.",
+    "icerik": "Müthiş bir taraftar desteğiyle oynanan maçta milli takımımız sergilediği performansla göz doldurdu. Maçın gollerini 20, 45 ve 82. dakikalarda gelen şık vuruşlar belirledi.",
+    "resim": "https://picsum.photos/id/26/400/200"
+  },
+  {
+    "id": 3,
+    "kategori": "Magazin",
+    "baslik": "Ünlü Oyuncudan Yeni Proje",
+    "ozet": "Yıllardır ekranlardan uzak olan sanatçı geri dönüyor.",
+    "icerik": "Sevilen oyuncu, yeni bir dijital platform dizisiyle anlaştığını duyurdu. Çekimlerin önümüzdeki ay İstanbul'da başlaması bekleniyor.",
+    "resim": "https://picsum.photos/id/103/400/200"
+  }
+]
